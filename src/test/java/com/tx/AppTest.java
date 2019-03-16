@@ -16,6 +16,7 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
         System.out.println("suuccf  +++++++++++");
+        System.out.println("suuccf1  +++++++++++");
         assertTrue( true );
     }
 }
