@@ -14,17 +14,6 @@ pipeline{
      
             }
         }
-       
-        stage('Deploy-Staging1'){
-            steps{
-         
-                echo 'Deploy-Staging1'
-                echo 'Deploy-Staging2'
-                
-                
-              
-            }
-        }
         
         stage('Deploy-Production'){
             steps{
