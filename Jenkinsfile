@@ -4,32 +4,16 @@ pipeline{
         stage('Build'){
             steps{
                 echo 'Building'
-                echo 'Building'
-                echo 'Building'
-                echo 'Building'
-                echo 'Building'
                 
             }
         }
         stage('Test'){
             steps{
                 echo 'Testing'
-                echo 'Testing'
-                echo 'Testing'
-                echo 'Testing'
-                echo 'Testing'
+     
             }
         }
-        stage('Approve'){  
-            steps{
-                timeout(time:15, unit:'MINUTES'){
-                    script{
-                        input message: 'Do you want to deploy?'
-                        //input message: 'Do you want to deploy?', submitter: 'ops'
-                    }
-                }
-            }
-        }
+       
         stage('Deploy-Staging1'){
             steps{
          
